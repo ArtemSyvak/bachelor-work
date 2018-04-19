@@ -1,7 +1,7 @@
 {
   "name": "deploy-heroku",
   "version": "1.0.0",
-  "description": "deploy application on heroku",
+  "description": "Artem Syvak bachelor work",
   "author": "artemsyvak <artsyvak@gmail.com>",
   "private": true,
   "scripts": {
