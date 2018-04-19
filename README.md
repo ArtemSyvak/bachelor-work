@@ -1,6 +1,6 @@
-# deploy-heroku
+# go-bicycle
 
-> deploy application on heroku
+> application for bicycle riders in Lviv
 
 ## Build Setup
 
