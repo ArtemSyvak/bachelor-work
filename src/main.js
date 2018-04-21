@@ -13,3 +13,21 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+//initiallize mapboxgl
+var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ0ZW1zeXZhayIsImEiOiJjamV6dDhtejQwYXo1MzB1cGtub3Awb3htIn0.bffgjaoFCdib8m5aRj3LVA';
+var map = new mapboxgl.Map({
+container: 'map',
+center: [24.0365,49.8416],
+zoom: 13,
+maxBounds: [
+        [23.9632689953,49.7979017214],
+        [24.1040313244,49.8758455877]
+      ],
+style: 'mapbox://styles/mapbox/streets-v10'
+});
+
+//[[[23.9632689953,49.7979017214],[24.1040313244,49.7979017214],[24.1040313244,49.8758455877],[23.9632689953,49.8758455877],[23.9632689953,49.7979017214]]]
+// map.getCanvas().webkitRequestFullScreen();
+// map.resize();
