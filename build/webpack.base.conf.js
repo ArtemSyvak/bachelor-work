@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+// import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -25,11 +26,13 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
+      // 'mapbox-gl': resolve('node_modules/mapbox-gl/dist/mapbox-gl.js'),
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
     }
   },
   module: {
+    noParse: /(mapbox-gl)\.js$/,
     rules: [
       {
         test: /\.vue$/,
