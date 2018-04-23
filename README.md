@@ -1,6 +1,6 @@
 # go-bicycle
 
-> application for bicycle riders in Lviv
+>web application for bicycle riders in Lviv
 
 ## Build Setup
 
