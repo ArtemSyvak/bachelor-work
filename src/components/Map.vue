@@ -19,8 +19,6 @@ export default {
       container: 'map',
       center: [24.0336551,49.8368523],
       zoom: 10,
-      pitch: 45,
-      bearing: -17.6,
       hash: true,
       maxBounds: [
               [23.9632689953,49.7979017214],
