@@ -33,11 +33,6 @@ export default {
         }));
       // Add zoom and rotation controls to the map.
         this.map.addControl(new mapboxgl.NavigationControl());
-        //AttributionControl
-        // this.map = new mapboxgl.Map({attributionControl: false})
-        //     .addControl(new mapboxgl.AttributionControl({
-        //     compact: true
-        // }));
     },
     logging: () =>{
       console.log("Hello from Map vue!!!");
