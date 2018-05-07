@@ -1,0 +1,620 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.55 579b1eec",
+  "osm3s": {
+    "timestamp_osm_base": "2018-05-07T12:02:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1655779700,
+  "lat": 49.8029504,
+  "lon": 24.0119813,
+  "tags": {
+    "addr:housenumber": "2б",
+    "addr:street": "Наукова вулиця",
+    "alt_name": "Драйв Спорт",
+    "name": "Драйв-Спорт",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 10:00-19:00",
+    "phone": "(032)245-49-81; +38 (032) 240-18-33, (032) 295-52-37",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2216333914,
+  "lat": 49.8131763,
+  "lon": 24.0447697,
+  "tags": {
+    "addr:housenumber": "16",
+    "addr:postcode": "79034",
+    "addr:street": "Листопадна вулиця",
+    "name": "Команчеро",
+    "shop": "bicycle",
+    "website": "http://fira.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 2470577668,
+  "lat": 49.8394576,
+  "lon": 24.0284954,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Миколая Коперника вулиця",
+    "name": "Спорт-Центр",
+    "name:uk": "Спорт-Центр",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2509465791,
+  "lat": 49.7985438,
+  "lon": 24.0468656,
+  "tags": {
+    "addr:housenumber": "36",
+    "addr:street": "Червоної Калини проспект",
+    "name": "Велобайк",
+    "name:uk": "Велобайк",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 2769628305,
+  "lat": 49.8444697,
+  "lon": 24.0113575,
+  "tags": {
+    "addr:housenumber": "52",
+    "addr:street": "Тараса Шевченка вулиця",
+    "name": "Велотехніка",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3195379134,
+  "lat": 49.8489219,
+  "lon": 23.9978435,
+  "tags": {
+    "addr:city": "Львів",
+    "addr:housenumber": "120",
+    "addr:street": "Тараса Шевченка вулиця",
+    "name": "cobran bikes",
+    "name:en": "cobran bikes",
+    "name:uk": "cobran bikes",
+    "opening_hours": "Mo-Sa 10:00-19:00; Su 14:30-18:00",
+    "phone": "+380 68 7080996",
+    "service:bicycle:cleaning": "yes",
+    "service:bicycle:clothing": "yes",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "yes",
+    "service:bicycle:wash": "yes",
+    "shop": "bicycle",
+    "website": "http://cobran.com.ua/"
+  }
+},
+{
+  "type": "node",
+  "id": 3208063616,
+  "lat": 49.8429059,
+  "lon": 24.0225085,
+  "tags": {
+    "addr:city": "Львів",
+    "addr:housenumber": "27",
+    "addr:postcode": "79007",
+    "addr:street": "Городоцька вулиця",
+    "name": "Х-індустрія",
+    "name:ru": "Х-индустрия",
+    "name:uk": "Х-індустрія",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3216457706,
+  "lat": 49.8295947,
+  "lon": 23.9926831,
+  "tags": {
+    "addr:housenumber": "80",
+    "addr:street": "Героїв УПА вулиця",
+    "name": "Boomerang",
+    "opening_hours": "Mo-Sa 10:00-19:00; Su 12:00-17:00",
+    "phone": "+38 073 067 8228",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3217021060,
+  "lat": 49.8310683,
+  "lon": 23.9692366,
+  "tags": {
+    "addr:housenumber": "174",
+    "addr:street": "Городоцька вулиця",
+    "email": "motozavod.shop@gmail.com",
+    "name": "МотоЗавод",
+    "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-15:00",
+    "phone": "+38 096 9506663",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle",
+    "website": "http://www.motozavod.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 3217024161,
+  "lat": 49.8310708,
+  "lon": 23.9681658,
+  "tags": {
+    "addr:housenumber": "174 к2",
+    "addr:street": "Городоцька вулиця",
+    "alt_name": "Фірмовий магазин Ardis",
+    "description": "Ремонт скутерів.",
+    "name": "Ardis",
+    "opening_hours": "Mo-Fr 10:00-18:00, Sa-Su 10:00-16:00",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3347737654,
+  "lat": 49.8060041,
+  "lon": 23.9979372,
+  "tags": {
+    "addr:city": "Львів",
+    "addr:housenumber": "114",
+    "addr:street": "Княгині Ольги вулиця",
+    "name": "action bike",
+    "opening_hours": "11:00-19:00",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 3718569618,
+  "lat": 49.8391335,
+  "lon": 24.0226363,
+  "tags": {
+    "addr:housenumber": "18",
+    "addr:street": "Юліуша Словацького вулиця",
+    "name": "veliki.ua",
+    "operator": "veliki.ua",
+    "shop": "bicycle",
+    "url": "http://veliki.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4119609889,
+  "lat": 49.8364482,
+  "lon": 24.0197103,
+  "tags": {
+    "addr:housenumber": "25",
+    "addr:street": "Соломії Крушельницької вулиця",
+    "description": "Веломайстерня Марка (вхiд з вул.Каменярiв)",
+    "name": "Велопідкова",
+    "name:en": "Velopidkova",
+    "name:uk": "Велопідкова",
+    "name:uk:word_stress": "Велопідко́ва",
+    "opening_hours": "10:00-19:30",
+    "phone": "+380503171140, +380632067217",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "yes",
+    "service:bicycle:second_hand": "yes",
+    "shop": "bicycle",
+    "short_name": "Підкова",
+    "website": "https://www.facebook.com/velopidkova/"
+  }
+},
+{
+  "type": "node",
+  "id": 4124620166,
+  "lat": 49.8315537,
+  "lon": 24.0425655,
+  "tags": {
+    "addr:city": "Львів",
+    "addr:housenumber": "59",
+    "addr:street": "Зелена вулиця",
+    "contact:email": "info@profirider.com.ua",
+    "contact:mobile": "+380 68 6407976",
+    "description": "Усі спортивні товари, представлені в нашому каталозі, мають всі необхідні сертифікати якості, а також відповідні гарантії.",
+    "name": "PROFI RIDER",
+    "opening_hours": "Mo-Sa 10:00-20:00; Su 10:00-18:00",
+    "operator": "PROFI RIDER, ІНТЕРНЕТ-МАГАЗИН СПОРТИВНИХ ТОВАРІВ",
+    "phone": "+380 96 903 77 77",
+    "shop": "bicycle",
+    "website": "http://profirider.com.ua/ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4124620172,
+  "lat": 49.8321809,
+  "lon": 24.0417113,
+  "tags": {
+    "addr:city": "Львів",
+    "addr:housenumber": "49",
+    "addr:postcode": "79017",
+    "addr:street": "Зелена вулиця",
+    "name": "Вовк Спорт",
+    "opening_hours": "Mo-Fr 11:00-19:00; Sa 11:00-17:00",
+    "operator": "Вовк Спорт",
+    "phone": "+380 67 733 77 51",
+    "phone_1": "+380 32 247 00 09",
+    "service:bicycle:diy": "yes",
+    "service:bicycle:pump": "yes",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "yes",
+    "service:bicycle:second_hand": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4146011710,
+  "lat": 49.8619370,
+  "lon": 24.0314208,
+  "tags": {
+    "addr:housenumber": "36/2",
+    "addr:street": "В’ячеслава Липинського вулиця",
+    "description": "Вам не потрібно ходити у вело магазин, витрачати час на пошук необхідних запчастин. Обширний асортимент товарів для велосипеда всесвітньовідомих брендів. Наш девіз - \"Той, хто хоч раз, став нашим клієнтом обов’язково повернеться до нас ще не один раз\"",
+    "email": "mtbstocklviv@gmail.com",
+    "name": "MTB Stock",
+    "opening_hours": "Mo-Fr 12:00-19:00; Sa 11:00-19:00",
+    "phone": "+380931983700;+3800984019859",
+    "service:bicycle:repair": "no",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle",
+    "website": "mtbstock.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4151756953,
+  "lat": 49.8161662,
+  "lon": 24.0307615,
+  "tags": {
+    "addr:city": "Львів",
+    "addr:housenumber": "18",
+    "addr:street": "Енергетична вулиця",
+    "contact:email": "info@piar2.com",
+    "contact:facebook": "https://www.facebook.com/piarkvadrat/",
+    "contact:viber": "+380990962526",
+    "description": "Працюємо навіть тоді, коли всі інші зачинені: у будні, вихідні та святкові дні. Послуги: продаж велосипедів, запчастин, аксесуарів, сервісне обслуговування і капітальний ремонт велосипедів, консультуємо з питань, які Вас цікавлять у сфері велосипедів",
+    "description:en": "We work even when all others are closed: on weekdays, weekends and holidays. Services: sales of bicycles, spare parts, accessories, service and overhaul of bicycles, we advise you on issues of interest to you in the field of bicycles",
+    "name": "ПІАР Квадрат",
+    "name:de": "Πr²",
+    "name:en": "Πr²",
+    "name:es": "Πr²",
+    "name:fr": "Πr²",
+    "name:uk": "ПІАР Квадрат",
+    "opening_hours": "Mo-Su 09:00-21:00",
+    "phone": "+380634579498;+380990962526;+380679633318",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle",
+    "website": "http://piar2.com/magazyn"
+  }
+},
+{
+  "type": "node",
+  "id": 4270582091,
+  "lat": 49.8444695,
+  "lon": 24.0230857,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:street": "Шпитальна вулиця",
+    "contact:email": "ghostlviv@yahoo.com",
+    "contact:mobile": "+380 63 7832239",
+    "contact:mobile_2": "+380 98 0380658",
+    "int_name": "Velobajka",
+    "name": "Велобайка",
+    "opening_hours": "11:00-19:00",
+    "repair": "yes",
+    "shop": "bicycle",
+    "website": "http://velobajka.at.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4314957139,
+  "lat": 49.8624966,
+  "lon": 24.0320935,
+  "tags": {
+    "addr:city": "Львів",
+    "addr:housenumber": "36",
+    "addr:street": "В’ячеслава Липинського вулиця",
+    "name": "ВЕЛОмайстерня",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "no",
+    "shop": "bicycle",
+    "website": "mtbstock.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4357844687,
+  "lat": 49.8082830,
+  "lon": 24.0610252,
+  "tags": {
+    "access": "no",
+    "description": "Речі для спорту: гірськолижне спорядження, автобокси, багажники, велосипеди (продаж, сервіс, консультації, прокат)",
+    "email": "stuff4sport@gmail.com",
+    "name": "Stuff4Sport",
+    "phone": "+380967822899;+380976657453;+380955876052",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4499088145,
+  "lat": 49.8001574,
+  "lon": 24.0581671,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "Антіна Манастирського вулиця",
+    "name": "Вело-Захід",
+    "phone": "0986149364",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4530450572,
+  "lat": 49.8114245,
+  "lon": 24.0435705,
+  "tags": {
+    "addr:city": "Львів",
+    "addr:housenumber": "19",
+    "addr:street": "Угорська вулиця",
+    "description": "Вам не потрібно ходити у вело магазин, витрачати час на пошук необхідних запчастин. Обширний асортимент товарів для велосипеда всесвітньовідомих брендів. Наш девіз - \"Той, хто хоч раз, став нашим клієнтом обов’язково повернеться до нас ще не один раз\"",
+    "email": "mtbstocklviv@gmail.com",
+    "level": "-1",
+    "name": "MTB Stock",
+    "opening_hours": "Mo-Fr 12:00-19:00; Sa 11:00-19:00",
+    "phone": "+380931983700;+3800984019859",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle",
+    "url": "mtbstock.com.ua",
+    "website": "http://mtbstock.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4720015289,
+  "lat": 49.8073376,
+  "lon": 23.9982645,
+  "tags": {
+    "addr:housenumber": "112",
+    "addr:street": "Княгині Ольги вулиця",
+    "name": "Велозапчастини, ремонт велосипедів",
+    "name:uk": "Велозапчастини, ремонт велосипедів",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4722610028,
+  "lat": 49.8003790,
+  "lon": 24.0701712,
+  "tags": {
+    "addr:housenumber": "3",
+    "addr:street": "Простора вулиця",
+    "alt_name": "Приватна веломайстерня",
+    "name": "ВелоСервіс",
+    "name:uk": "ВелоСервіс",
+    "owner": "Шведов Володмир Миколайович",
+    "phone": "+38 (067) 670-83-85, +38 (067) 419-42-83",
+    "service:bicycle:repair": "yes",
+    "service:bicycle:retail": "yes",
+    "service:bicycle:second_hand": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4829432802,
+  "lat": 49.8311162,
+  "lon": 23.9693415,
+  "tags": {
+    "addr:housenumber": "174",
+    "addr:street": "Городоцька вулиця",
+    "description": "Велосипеди, мототехніка, мото-вело запчастини",
+    "email": "velosvit.lviv@gmail.com",
+    "level": "-1",
+    "name": "Велосвіт",
+    "opening_hours": "Mo-Fr 09:00-19:00; Sa-Su 10:00-16:00",
+    "phone": "+380 95 831-18-93, +380 99 371-00-29, +380 98 014-64-66, +380 97 963-56-43",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle",
+    "website": "http://veloleo.com.ua/"
+  }
+},
+{
+  "type": "node",
+  "id": 4830416677,
+  "lat": 49.8310893,
+  "lon": 23.9684028,
+  "tags": {
+    "addr:housenumber": "174 к2",
+    "addr:street": "Городоцька вулиця",
+    "description": "Запчастини всіх видів Львівського мотозаводу та інших виробників..",
+    "name": "Вело-мото товари",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4830416680,
+  "lat": 49.8309963,
+  "lon": 23.9688461,
+  "tags": {
+    "addr:housenumber": "174",
+    "addr:street": "Городоцька вулиця",
+    "name": "Мото",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4830416681,
+  "lat": 49.8310102,
+  "lon": 23.9689312,
+  "tags": {
+    "addr:housenumber": "174",
+    "addr:street": "Городоцька вулиця",
+    "name": "Велосипеди",
+    "service:bicycle:retail": "yes",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4902457521,
+  "lat": 49.8418948,
+  "lon": 23.9610740,
+  "tags": {
+    "addr:street": "Широка вулиця",
+    "name": "#25 Expert Bike's Ремонт та продаж велосипедів",
+    "name:uk": "#25 Expert Bike's Ремонт та продаж велосипедів",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 4935270099,
+  "lat": 49.8524210,
+  "lon": 24.0228529,
+  "tags": {
+    "opening_hours": "Mo-Fr 09:00-18:00",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 5106085537,
+  "lat": 49.8354933,
+  "lon": 24.0315394,
+  "tags": {
+    "addr:housenumber": "1",
+    "addr:postcode": "79005",
+    "addr:street": "Омеляна Поповича вулиця",
+    "name": "Bike Station",
+    "opening_hours": "Mo-Fr 10:00-19:00",
+    "service": "bicycle",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 5107974151,
+  "lat": 49.8311761,
+  "lon": 23.9694864,
+  "tags": {
+    "level": "-1",
+    "name": "Мото-вело запчастини",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-16:00",
+    "operator": "Велосвіт",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 5550528123,
+  "lat": 49.8341004,
+  "lon": 24.0177333,
+  "tags": {
+    "name:en": "Action Bike",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 5581199750,
+  "lat": 49.8650430,
+  "lon": 24.0551649,
+  "tags": {
+    "name": "ВелоТочка",
+    "name:en": "BikePoint",
+    "name:uk": "ВелоТочка",
+    "ref": "А5",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 5583180248,
+  "lat": 49.8655240,
+  "lon": 24.0575584,
+  "tags": {
+    "name": "ВелоСпорт",
+    "name:uk": "ВелоСпорт",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 5583180311,
+  "lat": 49.8648754,
+  "lon": 24.0569172,
+  "tags": {
+    "name": "ВелоТовари",
+    "name:uk": "ВелоТовари",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "way",
+  "id": 584025909,
+  "nodes": [
+    5583180325,
+    5583180324,
+    5583180323,
+    5583180322,
+    5583180325
+  ],
+  "tags": {
+    "building": "hangar",
+    "description": "Велосипеди. Вживані та нові",
+    "name": "Велосипеди",
+    "name:uk": "Велосипеди",
+    "shop": "bicycle"
+  }
+},
+{
+  "type": "node",
+  "id": 5583180322,
+  "lat": 49.8646409,
+  "lon": 24.0560773
+},
+{
+  "type": "node",
+  "id": 5583180323,
+  "lat": 49.8646291,
+  "lon": 24.0561411
+},
+{
+  "type": "node",
+  "id": 5583180324,
+  "lat": 49.8646728,
+  "lon": 24.0561607
+},
+{
+  "type": "node",
+  "id": 5583180325,
+  "lat": 49.8646846,
+  "lon": 24.0560970
+}
+
+  ]
+}
