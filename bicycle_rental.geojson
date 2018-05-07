@@ -1,0 +1,1116 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.55 579b1eec",
+  "osm3s": {
+    "timestamp_osm_base": "2018-05-07T11:47:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 4271981391,
+  "lat": 49.8066347,
+  "lon": 23.9984390,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Княгині Ольги, Аквапарк",
+    "name:en": "Knyahyni Olhy, Akvapark",
+    "name:uk": "Княгині Ольги, Аквапарк",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9102",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4271981792,
+  "lat": 49.8399780,
+  "lon": 24.0218812,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "12",
+    "email": "info@nextbike.com.ua",
+    "name": "Університет Івана Франка",
+    "name:en": "Ivan Franko Univercity",
+    "name:uk": "Університет Івана Франка",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9101",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4271981793,
+  "lat": 49.8322358,
+  "lon": 23.9962180,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "ТехноПарк",
+    "name:en": "TechnoPark",
+    "name:uk": "ТехноПарк",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9103",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4271986191,
+  "lat": 49.8345522,
+  "lon": 24.0161690,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Політехнічна",
+    "name:en": "Politehnichna",
+    "name:uk": "Політехнічна",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9104",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4569164114,
+  "lat": 49.8413952,
+  "lon": 24.0319452,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "operator": "Перший міський велопрокат"
+  }
+},
+{
+  "type": "node",
+  "id": 4974914622,
+  "lat": 49.8420768,
+  "lon": 24.0309416,
+  "tags": {
+    "amenity": "bicycle_rental",
+    "name": "Veliki.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 504312505,
+  "nodes": [
+    4944827881,
+    4944827880,
+    4944827879,
+    4944827878,
+    4944827881
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Стрийська, 35, Податкова",
+    "name:en": "Stryyska str. 35, State tax office",
+    "name:uk": "Стрийська, 35, Податкова",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9139",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 504457819,
+  "nodes": [
+    4946184533,
+    4946184532,
+    4946184531,
+    4946184530,
+    4946184533
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Український Католицький Університет",
+    "name:en": "Ukrainian Catholic University",
+    "name:uk": "Український Католицький Університет",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9140",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 504457820,
+  "nodes": [
+    4946184537,
+    4946184536,
+    4946184535,
+    4946184534,
+    4946184537
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Володимира Великого, 1",
+    "name:en": "Volodymyra Velykoho Str, 1",
+    "name:uk": "Володимира Великого, 1",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9138",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 505749834,
+  "nodes": [
+    4956161939,
+    4956161938,
+    4956161937,
+    4956161936,
+    4956161939
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Стрийська - Наукова, перехрестя",
+    "name:en": "Stryyska - Naukova str. intersection",
+    "name:uk": "Стрийська - Наукова, перехрестя",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9137",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067833,
+  "nodes": [
+    4958555360,
+    4958555359,
+    4958555358,
+    4958555357,
+    4958555360
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Кінґ Кросс Леополіс",
+    "name:en": "King Cross Leopolis",
+    "name:uk": "Кінґ Кросс Леополіс",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9152",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067834,
+  "nodes": [
+    4958555364,
+    4958555363,
+    4958555362,
+    4958555361,
+    4958555364
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Червоної Калини, 109, ТЦ Санта Барбара",
+    "name:en": "Chervonoi Kalyny ave. 109 (Santa Barbara shopping mall)",
+    "name:uk": "Червоної Калини, 109, ТЦ Санта Барбара",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9143",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067835,
+  "nodes": [
+    4958555368,
+    4958555367,
+    4958555366,
+    4958555365,
+    4958555368
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Автовокзал м.Львів",
+    "name:en": "Lviv bus station",
+    "name:uk": "Автовокзал м.Львів",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9136",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067836,
+  "nodes": [
+    4958555372,
+    4958555371,
+    4958555370,
+    4958555369,
+    4958555372
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Червоної Калини, 81, Кінотеатр ім. Довженка",
+    "name:en": "Chervonoi Kalyny ave. 81 (O.Dovhenko cinema hall)",
+    "name:uk": "Червоної Калини, 81, Кінотеатр ім. Довженка",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9144",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067837,
+  "nodes": [
+    4958555376,
+    4958555375,
+    4958555374,
+    4958555373,
+    4958555376
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Червоної Калини, 49, Ринок «Шувар»",
+    "name:en": "Chervonoi Kalyny Ave, 49 (Shuvar trade zone)",
+    "name:uk": "Червоної Калини, 49, Ринок «Шувар»",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9145",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067838,
+  "nodes": [
+    4958555380,
+    4958555379,
+    4958555378,
+    4958555377,
+    4958555380
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Угорська, 14, Бізнес-центр «Домінант Плаза»",
+    "name:en": "Uhorska str. 14 (Business centre Dominant Plaza)",
+    "name:uk": "Угорська, 14, Бізнес-центр «Домінант Плаза»",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9146",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067839,
+  "nodes": [
+    4958555384,
+    4958555383,
+    4958555382,
+    4958555381,
+    4958555384
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Садова, 2а, офіс СофтСерв",
+    "name:en": "Sadova str. 2a, (SoftServe office)",
+    "name:uk": "Садова, 2а, офіс СофтСерв",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9149",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067840,
+  "nodes": [
+    4958555388,
+    4958555387,
+    4958555386,
+    4958555385,
+    4958555388
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "10",
+    "email": "info@nextbike.com.ua",
+    "name": "Ратуша, Площа Ринок",
+    "name:en": "Ratusha, Rynok Square",
+    "name:uk": "Ратуша, Площа Ринок",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ «Некстбайк Україна»",
+    "phone": "0 800 21 1980",
+    "ref": "9100",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067841,
+  "nodes": [
+    4958555392,
+    4958555391,
+    4958555390,
+    4958555389,
+    4958555392
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Чорновола / Липинського",
+    "name:en": "Chornovola / Lypyns'koho",
+    "name:uk": "Чорновола / Липинського",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9105",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 506067842,
+  "nodes": [
+    4958555396,
+    4958555395,
+    4958555394,
+    4958555393,
+    4958555396
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Чорновола, 67",
+    "name:en": "Chornovola, 67",
+    "name:uk": "Чорновола, 67",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9106",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 508893838,
+  "nodes": [
+    4982054497,
+    4982054496,
+    4982054495,
+    4982054494,
+    4982054497
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Форум Львів",
+    "name:en": "Forum Lviv shoppingmall",
+    "name:uk": "Форум Львів",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9147",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 508893843,
+  "nodes": [
+    4982054501,
+    4982054500,
+    4982054499,
+    4982054498,
+    4982054501
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Площа Петрушевича",
+    "name:en": "Petrushevycha sq.1",
+    "name:uk": "Площа Петрушевича",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9141",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 508913711,
+  "nodes": [
+    4982201424,
+    4982201423,
+    4982201422,
+    4982201421,
+    4982201424
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Любінська, 89",
+    "name:en": "Lyubinska str.89",
+    "name:uk": "Любінська, 89",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9151",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 508913720,
+  "nodes": [
+    4982201428,
+    4982201427,
+    4982201426,
+    4982201425,
+    4982201428
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Промислова, 50/52",
+    "name:en": "Promyslova str. 50/52",
+    "name:uk": "Промислова, 50/52",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9142",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 509306367,
+  "nodes": [
+    4985537725,
+    4985537724,
+    4985537723,
+    4985537722,
+    4985537725
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Щирецька, 36. ТВК «Південний»",
+    "name:en": "Shchyrecka str. 36 (Pivdennyy shopping center)",
+    "name:uk": "Щирецька, 36. ТВК «Південний»",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9150",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "way",
+  "id": 509306368,
+  "nodes": [
+    4985537729,
+    4985537728,
+    4985537727,
+    4985537726,
+    4985537729
+  ],
+  "tags": {
+    "amenity": "bicycle_rental",
+    "capacity": "6",
+    "email": "info@nextbike.com.ua",
+    "name": "Володимира Великого, 113",
+    "name:en": "Volodymyra Velykoho Str, 113",
+    "name:uk": "Володимира Великого, 113",
+    "network": "nextbike",
+    "opening_hours": "24/7",
+    "operator": "ТОВ \"Некстбайк Україна\"",
+    "phone": "0 800 21 1980",
+    "ref": "9148",
+    "surface": "metal",
+    "website": "http://nextbike.com.ua"
+  }
+},
+{
+  "type": "node",
+  "id": 4958555357,
+  "lat": 49.7739981,
+  "lon": 24.0122201
+},
+{
+  "type": "node",
+  "id": 4958555358,
+  "lat": 49.7739865,
+  "lon": 24.0122207
+},
+{
+  "type": "node",
+  "id": 4958555359,
+  "lat": 49.7739877,
+  "lon": 24.0122764
+},
+{
+  "type": "node",
+  "id": 4958555360,
+  "lat": 49.7739994,
+  "lon": 24.0122757
+},
+{
+  "type": "node",
+  "id": 4985537722,
+  "lat": 49.8130230,
+  "lon": 23.9770335
+},
+{
+  "type": "node",
+  "id": 4985537723,
+  "lat": 49.8130199,
+  "lon": 23.9770508
+},
+{
+  "type": "node",
+  "id": 4985537724,
+  "lat": 49.8130545,
+  "lon": 23.9770658
+},
+{
+  "type": "node",
+  "id": 4985537725,
+  "lat": 49.8130576,
+  "lon": 23.9770483
+},
+{
+  "type": "node",
+  "id": 4958555381,
+  "lat": 49.8220621,
+  "lon": 23.9856695
+},
+{
+  "type": "node",
+  "id": 4958555382,
+  "lat": 49.8220863,
+  "lon": 23.9856795
+},
+{
+  "type": "node",
+  "id": 4958555383,
+  "lat": 49.8221062,
+  "lon": 23.9855636
+},
+{
+  "type": "node",
+  "id": 4958555384,
+  "lat": 49.8220820,
+  "lon": 23.9855536
+},
+{
+  "type": "node",
+  "id": 4985537726,
+  "lat": 49.8112050,
+  "lon": 23.9913969
+},
+{
+  "type": "node",
+  "id": 4985537727,
+  "lat": 49.8111935,
+  "lon": 23.9913948
+},
+{
+  "type": "node",
+  "id": 4985537728,
+  "lat": 49.8111892,
+  "lon": 23.9914501
+},
+{
+  "type": "node",
+  "id": 4985537729,
+  "lat": 49.8112008,
+  "lon": 23.9914522
+},
+{
+  "type": "node",
+  "id": 4958555365,
+  "lat": 49.7872889,
+  "lon": 24.0169910
+},
+{
+  "type": "node",
+  "id": 4958555366,
+  "lat": 49.7873004,
+  "lon": 24.0169928
+},
+{
+  "type": "node",
+  "id": 4958555367,
+  "lat": 49.7873039,
+  "lon": 24.0169373
+},
+{
+  "type": "node",
+  "id": 4958555368,
+  "lat": 49.7872923,
+  "lon": 24.0169356
+},
+{
+  "type": "node",
+  "id": 4958555361,
+  "lat": 49.7846381,
+  "lon": 24.0595730
+},
+{
+  "type": "node",
+  "id": 4958555362,
+  "lat": 49.7846379,
+  "lon": 24.0595550
+},
+{
+  "type": "node",
+  "id": 4958555363,
+  "lat": 49.7846019,
+  "lon": 24.0595558
+},
+{
+  "type": "node",
+  "id": 4958555364,
+  "lat": 49.7846021,
+  "lon": 24.0595738
+},
+{
+  "type": "node",
+  "id": 4958555369,
+  "lat": 49.7948551,
+  "lon": 24.0574631
+},
+{
+  "type": "node",
+  "id": 4958555370,
+  "lat": 49.7948636,
+  "lon": 24.0574753
+},
+{
+  "type": "node",
+  "id": 4958555371,
+  "lat": 49.7948881,
+  "lon": 24.0574345
+},
+{
+  "type": "node",
+  "id": 4958555372,
+  "lat": 49.7948795,
+  "lon": 24.0574223
+},
+{
+  "type": "node",
+  "id": 4956161936,
+  "lat": 49.8023963,
+  "lon": 24.0189757
+},
+{
+  "type": "node",
+  "id": 4956161937,
+  "lat": 49.8023887,
+  "lon": 24.0189621
+},
+{
+  "type": "node",
+  "id": 4956161938,
+  "lat": 49.8023616,
+  "lon": 24.0189988
+},
+{
+  "type": "node",
+  "id": 4956161939,
+  "lat": 49.8023693,
+  "lon": 24.0190123
+},
+{
+  "type": "node",
+  "id": 4946184534,
+  "lat": 49.8079984,
+  "lon": 24.0187715
+},
+{
+  "type": "node",
+  "id": 4946184535,
+  "lat": 49.8079893,
+  "lon": 24.0187827
+},
+{
+  "type": "node",
+  "id": 4946184536,
+  "lat": 49.8080117,
+  "lon": 24.0188263
+},
+{
+  "type": "node",
+  "id": 4946184537,
+  "lat": 49.8080208,
+  "lon": 24.0188150
+},
+{
+  "type": "node",
+  "id": 4944827878,
+  "lat": 49.8153863,
+  "lon": 24.0201420
+},
+{
+  "type": "node",
+  "id": 4944827879,
+  "lat": 49.8153846,
+  "lon": 24.0201808
+},
+{
+  "type": "node",
+  "id": 4944827880,
+  "lat": 49.8154618,
+  "lon": 24.0201888
+},
+{
+  "type": "node",
+  "id": 4944827881,
+  "lat": 49.8154635,
+  "lon": 24.0201500
+},
+{
+  "type": "node",
+  "id": 4946184530,
+  "lat": 49.8158671,
+  "lon": 24.0254843
+},
+{
+  "type": "node",
+  "id": 4946184533,
+  "lat": 49.8159029,
+  "lon": 24.0254890
+},
+{
+  "type": "node",
+  "id": 4946184531,
+  "lat": 49.8158661,
+  "lon": 24.0255023
+},
+{
+  "type": "node",
+  "id": 4946184532,
+  "lat": 49.8159019,
+  "lon": 24.0255070
+},
+{
+  "type": "node",
+  "id": 4958555373,
+  "lat": 49.7990281,
+  "lon": 24.0493146
+},
+{
+  "type": "node",
+  "id": 4958555374,
+  "lat": 49.7990372,
+  "lon": 24.0493257
+},
+{
+  "type": "node",
+  "id": 4958555375,
+  "lat": 49.7990594,
+  "lon": 24.0492818
+},
+{
+  "type": "node",
+  "id": 4958555376,
+  "lat": 49.7990502,
+  "lon": 24.0492707
+},
+{
+  "type": "node",
+  "id": 4958555377,
+  "lat": 49.8105871,
+  "lon": 24.0458674
+},
+{
+  "type": "node",
+  "id": 4958555378,
+  "lat": 49.8105777,
+  "lon": 24.0458781
+},
+{
+  "type": "node",
+  "id": 4958555379,
+  "lat": 49.8105990,
+  "lon": 24.0459229
+},
+{
+  "type": "node",
+  "id": 4958555380,
+  "lat": 49.8106084,
+  "lon": 24.0459123
+},
+{
+  "type": "node",
+  "id": 4982201421,
+  "lat": 49.8238797,
+  "lon": 23.9773746
+},
+{
+  "type": "node",
+  "id": 4982201422,
+  "lat": 49.8238649,
+  "lon": 23.9773432
+},
+{
+  "type": "node",
+  "id": 4982201423,
+  "lat": 49.8238025,
+  "lon": 23.9774139
+},
+{
+  "type": "node",
+  "id": 4982201424,
+  "lat": 49.8238173,
+  "lon": 23.9774453
+},
+{
+  "type": "node",
+  "id": 4982054498,
+  "lat": 49.8331605,
+  "lon": 24.0357165
+},
+{
+  "type": "node",
+  "id": 4982054499,
+  "lat": 49.8331373,
+  "lon": 24.0357017
+},
+{
+  "type": "node",
+  "id": 4982054500,
+  "lat": 49.8331079,
+  "lon": 24.0358126
+},
+{
+  "type": "node",
+  "id": 4982054501,
+  "lat": 49.8331311,
+  "lon": 24.0358274
+},
+{
+  "type": "node",
+  "id": 4982054494,
+  "lat": 49.8497441,
+  "lon": 24.0245485
+},
+{
+  "type": "node",
+  "id": 4982054495,
+  "lat": 49.8497191,
+  "lon": 24.0245473
+},
+{
+  "type": "node",
+  "id": 4982054496,
+  "lat": 49.8497168,
+  "lon": 24.0246672
+},
+{
+  "type": "node",
+  "id": 4982054497,
+  "lat": 49.8497419,
+  "lon": 24.0246684
+},
+{
+  "type": "node",
+  "id": 4958555385,
+  "lat": 49.8415246,
+  "lon": 24.0311558
+},
+{
+  "type": "node",
+  "id": 4958555386,
+  "lat": 49.8415288,
+  "lon": 24.0311747
+},
+{
+  "type": "node",
+  "id": 4958555387,
+  "lat": 49.8415879,
+  "lon": 24.0311430
+},
+{
+  "type": "node",
+  "id": 4958555388,
+  "lat": 49.8415837,
+  "lon": 24.0311241
+},
+{
+  "type": "node",
+  "id": 4958555389,
+  "lat": 49.8558460,
+  "lon": 24.0217685
+},
+{
+  "type": "node",
+  "id": 4958555390,
+  "lat": 49.8558549,
+  "lon": 24.0218048
+},
+{
+  "type": "node",
+  "id": 4958555391,
+  "lat": 49.8559271,
+  "lon": 24.0217623
+},
+{
+  "type": "node",
+  "id": 4958555392,
+  "lat": 49.8559183,
+  "lon": 24.0217259
+},
+{
+  "type": "node",
+  "id": 4958555393,
+  "lat": 49.8619235,
+  "lon": 24.0184356
+},
+{
+  "type": "node",
+  "id": 4958555394,
+  "lat": 49.8619326,
+  "lon": 24.0184719
+},
+{
+  "type": "node",
+  "id": 4958555395,
+  "lat": 49.8620046,
+  "lon": 24.0184285
+},
+{
+  "type": "node",
+  "id": 4958555396,
+  "lat": 49.8619956,
+  "lon": 24.0183922
+},
+{
+  "type": "node",
+  "id": 4982201425,
+  "lat": 49.8613116,
+  "lon": 24.0439204
+},
+{
+  "type": "node",
+  "id": 4982201426,
+  "lat": 49.8613151,
+  "lon": 24.0438818
+},
+{
+  "type": "node",
+  "id": 4982201427,
+  "lat": 49.8612385,
+  "lon": 24.0438655
+},
+{
+  "type": "node",
+  "id": 4982201428,
+  "lat": 49.8612351,
+  "lon": 24.0439040
+}
+
+  ]
+}
