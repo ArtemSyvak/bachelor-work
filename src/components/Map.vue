@@ -17,21 +17,23 @@ export default {
       this.map = new mapboxgl.Map({
       container: 'map',
       center: [24.0336551,49.8368523],
-      zoom: 10,
+      zoom: 14,
       hash: true,
-      maxBounds: [
-              [23.9632689953,49.7979017214],
-              [24.1040313244,49.8758455877]
-            ],
+      // maxBounds: [
+      //         [23.9632689953,49.7979017214],
+      //         [24.1040313244,49.8758455877]
+      //       ],
       style: 'mapbox://styles/artemsyvak/cjf1load5091o2tk8cy4cje4i'
       });
-      //user interface on the map
-        // this.map.addControl(new mapboxgl.ScaleControl({
-        // maxWidth: 80,
-        // unit: 'imperial'
-        // }));
       // Add zoom and rotation controls to the map.
         this.map.addControl(new mapboxgl.NavigationControl());
+      // Add geolocation button
+        this.map.addControl(new mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true
+          },
+          trackUserLocation: true
+        }));
     },
     logging: () =>{
       console.log("Hello from Map vue!!!");
