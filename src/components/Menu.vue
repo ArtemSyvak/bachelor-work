@@ -14,7 +14,7 @@ import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 
 export default {
-  name: 'Menu',
+  name: 'menu',
   components:{
     Icon
   }
@@ -40,7 +40,7 @@ export default {
   }
   .menu-link{
     text-decoration: none;
-    color: #FFFBCB;
+    color: #FCE38A;
     font-weight: 600;
   }
 </style>
