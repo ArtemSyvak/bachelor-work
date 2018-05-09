@@ -1,9 +1,9 @@
 <template>
   <div id="menu">
     <ul id="bottom-menu">
-      <li class="menu-item"><a href="#" class="menu-link"><icon name="align-justify"/></a></li>
-      <li class="menu-item"><a href="#" class="menu-link"><icon name="location-arrow"/></a></li>
-      <li class="menu-item"><a href="#" class="menu-link"><icon name="search"/></a></li>
+      <li class="menu-item left"><a href="#" class="menu-link"><icon name="align-justify"/></a></li>
+      <li class="menu-item middle"><a href="#" class="menu-link"><icon name="location-arrow"/></a></li>
+      <li class="menu-item right"><a href="#" class="menu-link"><icon name="search"/></a></li>
     </ul>
   </div>
 </template>
@@ -31,16 +31,35 @@ export default {
     background-color: #5BE7C4;
   }
   #bottom-menu{
-    padding-left: 90px;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
   }
   .menu-item{
-    width: 33%;
-    float: left;
+    width: 33.3333%;
+    margin: auto;
     list-style: none;
   }
+  /* .left{
+    padding-left: 20px;
+  }
+  .right{
+    padding-right: 20px;
+  } */
   .menu-link{
+    display: block;
+    width: 100%;
+    text-align: center;
     text-decoration: none;
     color: #FCE38A;
     font-weight: 600;
   }
+  /* .right .menu-link{
+    float: right;
+  }
+  .middle .menu-link{
+    display: block;
+    width: 100%;
+    text-align: center;
+  } */
 </style>
