@@ -10,6 +10,8 @@
 
 <script>
 
+//component for UI navigation bottom-menu
+
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 
