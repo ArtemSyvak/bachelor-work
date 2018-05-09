@@ -2,9 +2,8 @@
   <div id="map"></div>
 </template>
 
-
-
 <script>
+
 export default {
   name: 'Map',
   mounted(){
@@ -27,10 +26,10 @@ export default {
       style: 'mapbox://styles/artemsyvak/cjf1load5091o2tk8cy4cje4i'
       });
       //user interface on the map
-        this.map.addControl(new mapboxgl.ScaleControl({
-        maxWidth: 80,
-        unit: 'imperial'
-        }));
+        // this.map.addControl(new mapboxgl.ScaleControl({
+        // maxWidth: 80,
+        // unit: 'imperial'
+        // }));
       // Add zoom and rotation controls to the map.
         this.map.addControl(new mapboxgl.NavigationControl());
     },

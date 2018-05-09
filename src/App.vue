@@ -2,12 +2,19 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
+    <Menu/>
   </div>
 </template>
 
 <script>
+
+import Menu from '@/components/Menu'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    Menu
+  }
 }
 </script>
 
