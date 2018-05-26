@@ -1,10 +1,13 @@
 <template>
   <div id="menu">
     <ul id="bottom-menu">
-      <li class="menu-item"><a href="#" class="menu-link"><icon name="align-justify"/></a></li>
+      <li class="menu-item"><a href="#" class="menu-link" @click="showMenu()"><icon name="align-justify"/></a></li>
       <li class="menu-item"><a href="#" class="menu-link"><icon name="location-arrow"/></a></li>
       <li class="menu-item"><a href="#" class="menu-link"><icon name="search"/></a></li>
     </ul>
+    <div class="container">
+      <DropdownMenu/>
+    </div>
   </div>
 </template>
 
@@ -14,11 +17,18 @@
 
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
+import DropdownMenu from './DropdownMenu'
 
 export default {
-  name: 'menu',
+  name: 'Menu',
   components:{
-    Icon
+    Icon,
+    DropdownMenu
+  },
+  methods:{
+    showMenu: () =>{
+      $('#dropdown-menu').hide("slow");
+    }
   }
 }
 </script>

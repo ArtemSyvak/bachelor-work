@@ -3,17 +3,20 @@
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
     <Menu/>
+    <!-- <DropdownMenu/> -->
   </div>
 </template>
 
 <script>
 
 import Menu from '@/components/Menu'
+import DropdownMenu from '@/components/DropdownMenu'
 
 export default {
   name: 'App',
   components:{
-    Menu
+    Menu,
+    DropdownMenu
   }
 }
 </script>
