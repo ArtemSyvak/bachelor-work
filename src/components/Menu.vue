@@ -43,16 +43,19 @@ export default {
     background-color: #5BE7C4;
   }
   #bottom-menu{
+    height: 100%;
+    margin: 0;
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
   }
   .menu-item{
     width: 33.3333%;
-    margin: auto;
+    margin: 13px 0;
     list-style: none;
   }
   .menu-link{
+    height: 100%;
     display: block;
     width: 100%;
     text-align: center;
