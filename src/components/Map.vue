@@ -36,7 +36,7 @@ export default {
       function getData() {
         //OVERPASS_API
         let dataShops = {},
-            urlShops = 'http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];'+
+            urlShops = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];'+
         '(node["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);'+
         // 'way["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);'+
         'relation["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););'+
