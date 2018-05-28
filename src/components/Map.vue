@@ -23,7 +23,7 @@ export default {
       style: 'mapbox://styles/artemsyvak/cjf1load5091o2tk8cy4cje4i'
       });
 
-    // Add zoom and rotation controls to the map.
+    // Add zoom and rotation controls
       this.map.addControl(new mapboxgl.NavigationControl());
     // Add geolocation button
       this.map.addControl(new mapboxgl.GeolocateControl({
