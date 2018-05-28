@@ -25,6 +25,13 @@ export default {
   },
   methods:{
     showMenu: () =>{
+
+      // need add animation rotate-icon
+
+      // $('.toggle-menu-icon').css({
+      //   'rotate':'45deg',
+      //   'transition': '0.4s'
+      // })
       $('.toggle-menu-icon').toggle('slow');
       $('#menu').hasClass('collapse-top')
     ? $('#menu').removeClass('collapse-top')
@@ -49,6 +56,7 @@ export default {
     transition: 0.4s;
     margin-bottom: 248px;
   }
+
   #bottom-menu{
     height: 100%;
     margin: 0;
