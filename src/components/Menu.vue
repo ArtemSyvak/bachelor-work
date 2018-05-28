@@ -1,13 +1,11 @@
 <template>
   <div id="menu">
     <ul id="bottom-menu">
-      <li class="menu-item"><a href="#" class="menu-link" @click="showMenu()"><icon name="align-justify"/></a></li>
+      <li class="menu-item"><a href="#" class="menu-link" @click="showMenu()"><icon class="toggle-menu-icon" name="bars"/><icon style="display:none" class="toggle-menu-icon" name="arrow-down"/></a></li>
       <li class="menu-item"><a href="#" class="menu-link"><icon name="location-arrow"/></a></li>
       <li class="menu-item"><a href="#" class="menu-link"><icon name="search"/></a></li>
     </ul>
-    <div class="container">
       <DropdownMenu/>
-    </div>
   </div>
 </template>
 
@@ -27,7 +25,11 @@ export default {
   },
   methods:{
     showMenu: () =>{
-      $('#dropdown-menu').hide("slow");
+      $('.toggle-menu-icon').toggle('slow');
+      $('#menu').hasClass('collapse-top')
+    ? $('#menu').removeClass('collapse-top')
+    : $('#menu').addClass('collapse-top')
+      $('#dropdown-menu').toggle('slow');
     }
   }
 }
@@ -40,7 +42,12 @@ export default {
     color: white;
     width: 100%;
     height: 40px;
+    transition: 0.4s;
     background-color: #5BE7C4;
+  }
+  .collapse-top{
+    transition: 0.4s;
+    margin-bottom: 248px;
   }
   #bottom-menu{
     height: 100%;

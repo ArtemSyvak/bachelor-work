@@ -3,9 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import vue_jquery from '../node_modules/vue-jquery'
+import jQuery from 'jquery'
+global.$ = jQuery
+let Bootstrap = require('bootstrap');
+import 'bootstrap/dist/css/bootstrap.css'
 
-Vue.use(vue_jquery);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
