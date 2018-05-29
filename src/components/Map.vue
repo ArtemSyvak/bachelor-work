@@ -48,6 +48,7 @@ export default {
           async: false,
           crossDomain: true,
           success: function (response) {
+            // console.log(response);
             //here response = geojson from overpass-api
             dataShops = response.elements;
           }
