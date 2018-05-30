@@ -3,7 +3,7 @@
     <ul id="bottom-menu">
       <li class="menu-item"><a href="#" class="menu-link" @click="showMenu()"><icon class="toggle-menu-icon" name="bars"/><icon style="display:none" class="toggle-menu-icon" name="arrow-down"/></a></li>
       <li class="menu-item"><a href="#" class="menu-link"><icon name="location-arrow"/></a></li>
-      <li class="menu-item"><a href="#" class="menu-link"><icon name="search"/></a></li>
+      <li class="menu-item"><a href="#" class="menu-link" @click="showSearch()"><icon name="search"/></a></li>
     </ul>
       <DropdownMenu/>
   </div>
@@ -25,7 +25,6 @@ export default {
   },
   methods:{
     showMenu: () =>{
-
       // need add animation rotate-icon
 
       // $('.toggle-menu-icon').css({
@@ -37,6 +36,9 @@ export default {
     ? $('#menu').removeClass('collapse-top')
     : $('#menu').addClass('collapse-top')
       $('#dropdown-menu').toggle('slow');
+    },
+    showSearch: () =>{
+      $('.mapboxgl-ctrl-geocoder').toggle("slow");
     }
   }
 }
@@ -50,11 +52,11 @@ export default {
     width: 100%;
     height: 40px;
     transition: 0.4s;
-    background-color: #5BE7C4;
+    background-color: #7A57D1;
   }
   .collapse-top{
     transition: 0.4s;
-    margin-bottom: 248px;
+    margin-bottom: 203px;
   }
 
   #bottom-menu{

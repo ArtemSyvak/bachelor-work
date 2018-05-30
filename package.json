@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@mapbox/mapbox-gl-geocoder": "^2.2.0",
     "bootstrap": "^4.1.1",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
