@@ -37,7 +37,7 @@ export default {
         },
         trackUserLocation: true
       }));
-      
+
 
       const MapboxGeocoder = require('@mapbox/mapbox-gl-geocoder');
       this.map.addControl(new MapboxGeocoder({
@@ -70,7 +70,7 @@ export default {
       function getDataRentals() {
         //OVERPASS_API
         let dataRentals = {},
-            url = 'http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bicycle_rental"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);relation["amenity"="bicycle_rental"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););out;>;out skel qt;';
+            url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bicycle_rental"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);relation["amenity"="bicycle_rental"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););out;>;out skel qt;';
         $.ajax({
           url: url,
           dataType: 'json',
@@ -89,7 +89,7 @@ export default {
       function getDataParking() {
         //OVERPASS_API
         let dataParking = {},
-            url = 'http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bicycle_parking"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);relation["amenity"="bicycle_parking"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););out;>;out skel qt;';
+            url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bicycle_parking"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);relation["amenity"="bicycle_parking"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););out;>;out skel qt;';
         $.ajax({
           url: url,
           dataType: 'json',
