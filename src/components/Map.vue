@@ -23,9 +23,12 @@ export default {
       this.map = new mapboxgl.Map({
       container: 'map',
       center: [24.0336551,49.8368523],
+      pitch: 60,
+      bearing: -60,
       zoom: 14,
       hash: true,
       style: 'mapbox://styles/artemsyvak/cjf1load5091o2tk8cy4cje4i'
+      // style: 'mapbox://styles/artemsyvak/cjifdt5gt0e1m2rmomxedso69'
       });
 
     // Add zoom and rotation controls
@@ -37,7 +40,46 @@ export default {
         },
         trackUserLocation: true
       }));
+      // The 'building' layer in the mapbox-streets vector source contains building-height
+      // data from OpenStreetMap.
+      this.map.on('load', function() {
+          // Insert the layer beneath any symbol layer.
+          var layers = map.getStyle().layers;
 
+          var labelLayerId;
+          for (var i = 0; i < layers.length; i++) {
+              if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+                  labelLayerId = layers[i].id;
+                  break;
+              }
+          }
+
+          map.addLayer({
+              'id': '3d-buildings',
+              'source': 'composite',
+              'source-layer': 'building',
+              'filter': ['==', 'extrude', 'true'],
+              'type': 'fill-extrusion',
+              'minzoom': 15,
+              'paint': {
+                  'fill-extrusion-color': '#aaa',
+
+                  // use an 'interpolate' expression to add a smooth transition effect to the
+                  // buildings as the user zooms in
+                  'fill-extrusion-height': [
+                      "interpolate", ["linear"], ["zoom"],
+                      15, 0,
+                      15.05, ["get", "height"]
+                  ],
+                  'fill-extrusion-base': [
+                      "interpolate", ["linear"], ["zoom"],
+                      15, 0,
+                      15.05, ["get", "min_height"]
+                  ],
+                  'fill-extrusion-opacity': .6
+              }
+          }, labelLayerId);
+      });
 
       const MapboxGeocoder = require('@mapbox/mapbox-gl-geocoder');
       this.map.addControl(new MapboxGeocoder({
@@ -78,7 +120,6 @@ export default {
           async: false,
           crossDomain: true,
           success: function (response) {
-            // console.log(response);
             //here response = geojson from overpass-api
             dataRentals = response.elements;
           }
@@ -105,17 +146,21 @@ export default {
         return dataParking;
       }
 
-    // add data-shop-bycicles markers to map
-    let map = this.map;
+    const map = this.map;
 
+
+
+
+    // add data-shop-bycicles markers to map
     dataShops.forEach(function(marker) {
+      // console.log(marker);
     // create a DOM element for the marker
         let el = document.createElement('div');
         el.className = 'marker-shops';
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
-            window.alert(marker.tags.alt_name);
+            window.alert('Shop name - '+marker.tags.name+"\n"+'Schedule- '+marker.tags.opening_hours);
         });
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
@@ -124,15 +169,20 @@ export default {
         .addTo(map);
     });
 
+
+
+
+
     //add data-shop-rentals markers to map
     dataRentals.forEach(function(marker) {
+       // console.log(marker);
     // create a DOM element for the marker
         let el = document.createElement('div');
         el.className = 'marker-rentals';
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
-            window.alert(marker.tags.alt_name);
+            window.alert("Name- "+marker.tags.name +"\n"+ "Network- "+marker.tags.network +"\n"+ "Capacity- "+marker.tags.capacity );
         });
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
@@ -141,16 +191,20 @@ export default {
         .addTo(map);
     });
 
+
+
+
     //add data-parking markers to map
     dataParking.forEach(function(marker) {
+      // console.log(marker);
     // create a DOM element for the marker
         let el = document.createElement('div');
         el.className = 'marker-parking';
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
-            console.log(marker.tags.alt_name);
-            window.alert(marker.tags.alt_name);
+            // console.log(marker.tags.name);
+            window.alert('Bicycle parking '+'\n'+'Capacity - '+marker.tags.capacity+'\n'+'Covered - '+marker.tags.covered);
         });
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
@@ -174,6 +228,20 @@ export default {
   top:0;
   bottom:0;
   width:100%;
+}
+.mapboxgl-ctrl-geocoder{
+  display: none;
+}
+.mapboxgl-ctrl-top-right{
+  top:0;
+  right: -10px;
+  bottom: -81px;
+}
+.mapboxgl-ctrl-group{
+  /* margin-bottom: 00px; */
+}
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl{
+  margin-bottom: 80px ;
 }
 .marker-shops{
   width: 10px;

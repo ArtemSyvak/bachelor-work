@@ -41,15 +41,12 @@ export default {
   methods: {
     toggleShops: () =>{
       $('.marker-shops').toggle("slow");
-      console.log('hiiiii!!!!!');
     },
     toggleRentals: () =>{
       $('.marker-rentals').toggle("slow");
-      console.log('hiiiii!!!!!');
     },
     toggleParking: () =>{
-      $('.marker-parking').toggle("slow");
-      console.log('hiiiii!!!!!');
+      $('.marker-parking').toggle("slow");      
     }
   }
 }

@@ -4,6 +4,7 @@
       <li class="menu-item"><a href="#" class="menu-link" @click="showMenu()"><icon class="toggle-menu-icon" name="bars"/><icon style="display:none" class="toggle-menu-icon" name="arrow-down"/></a></li>
       <li class="menu-item"><a href="#" class="menu-link"><icon name="location-arrow"/></a></li>
       <li class="menu-item"><a href="#" class="menu-link" @click="showSearch()"><icon name="search"/></a></li>
+      <!-- <li class="menu-item" id="geocoder"></li> -->
     </ul>
       <DropdownMenu/>
   </div>

@@ -7,6 +7,7 @@ import jQuery from 'jquery'
 global.$ = jQuery
 let Bootstrap = require('bootstrap');
 import 'bootstrap/dist/css/bootstrap.css'
+// import * as turf from '@turf/turf'
 
 Vue.config.productionTip = false
 
