@@ -46,7 +46,7 @@ export default {
       $('.marker-rentals').toggle("slow");
     },
     toggleParking: () =>{
-      $('.marker-parking').toggle("slow");      
+      $('.marker-parking').toggle("slow");
     }
   }
 }
@@ -74,13 +74,13 @@ export default {
 
 /* custom input checkboxes */
 
-  input[type=checkbox]{
+  #dropdown-menu input[type=checkbox]{
     height: 0;
     width: 0;
     visibility: hidden;
   }
 
-  label {
+  #dropdown-menu label {
   	cursor: pointer;
   	width: 40px;
   	height: 15px;
@@ -91,7 +91,7 @@ export default {
     float: right;
   }
 
-  label:after {
+  #dropdown-menu label:after {
   	content: '';
   	position: absolute;
   	top: -2px;
@@ -103,16 +103,16 @@ export default {
   	transition: 0.3s;
   }
 
-  input:checked + label {
+  #dropdown-menu input:checked + label {
     background: #EAEAEA;
   }
 
-  input:checked + label:after {
+  #dropdown-menu input:checked + label:after {
   	right: calc(100% - 2px);
   	transform: translateX(100%);
   }
 
-  label:active:after {
+  #dropdown-menu label:active:after {
   	width: 10px;
   }
 </style>

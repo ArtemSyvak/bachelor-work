@@ -16,7 +16,25 @@ export default {
           dataRentals = getDataRentals(),
           dataParking = getDataParking();
 
+      let myPosition,
+          options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+          }
+      function success(pos) {
+        myPosition = pos.coords;
+        console.log(`Latitude : ${myPosition.latitude}`);
+        console.log(`Longitude: ${myPosition.longitude}`);
+      }
+
+      function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+      }
+
+      navigator.geolocation.getCurrentPosition(success, error, options);
       const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+      const MapboxGeocoder = require('@mapbox/mapbox-gl-geocoder');
       mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ0ZW1zeXZhayIsImEiOiJjamV6dDhtejQwYXo1MzB1cGtub3Awb3htIn0.bffgjaoFCdib8m5aRj3LVA';
 
       //creating map object
@@ -40,8 +58,54 @@ export default {
         },
         trackUserLocation: true
       }));
-      // The 'building' layer in the mapbox-streets vector source contains building-height
-      // data from OpenStreetMap.
+    //add geocoder
+      this.map.addControl(new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken
+      }));
+
+
+
+function drawGeoJSON(marker) {
+  let responseGeometry;
+  $.ajax({
+    url: 'https://api.mapbox.com/directions/v5/mapbox/cycling/'+myPosition.longitude+','+myPosition.latitude+';'+marker.lon+','+marker.lat+'?overview=full&geometries=geojson&access_token=pk.eyJ1IjoiYXJ0ZW1zeXZhayIsImEiOiJjamV6dDhtejQwYXo1MzB1cGtub3Awb3htIn0.bffgjaoFCdib8m5aRj3LVA&steps=true&alternatives=false',
+    type: 'GET',
+    async:false,
+    dataType: 'json'
+  })
+  .done(function(response) {
+    responseGeometry = response.routes[0].geometry;
+  });
+
+
+            map.addLayer({
+                "id": marker.id.toString(),
+                "type": "line",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "properties": {},
+                        "geometry": responseGeometry
+                    }
+                },
+                "layout": {
+                    "line-join": "round",
+                    "line-cap": "round"
+                },
+                "paint": {
+                    "line-color": "#FF2E63",
+                    "line-width": 8
+                }
+            });
+
+}
+
+      // this.map.addControl(new MapboxDirections({
+      // accessToken: mapboxgl.accessToken
+      // }), 'top-left');
+    // The 'building' layer in the mapbox-streets vector source contains building-height
+    // data from OpenStreetMap.
       this.map.on('load', function() {
           // Insert the layer beneath any symbol layer.
           var layers = map.getStyle().layers;
@@ -79,77 +143,74 @@ export default {
                   'fill-extrusion-opacity': .6
               }
           }, labelLayerId);
+
+
+
+
+
       });
 
-      const MapboxGeocoder = require('@mapbox/mapbox-gl-geocoder');
-      this.map.addControl(new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken
-      }));
+    function getDataShops() {
+      //OVERPASS_API
+      let dataShops = {},
+          url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];'+
+      '(node["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);'+
+      // 'way["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);'+
+      'relation["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););'+
+      'out;>;out skel qt;';
+      $.ajax({
+        url: url,
+        dataType: 'json',
+        type: 'GET',
+        async: false,
+        crossDomain: true,
+        success: function (response) {
+          // console.log(response);
+          //here response = geojson from overpass-api
+          dataShops = response.elements;
+        }
+      })
+      return dataShops;
+    }
 
-      function getDataShops() {
-        //OVERPASS_API
-        let dataShops = {},
-            url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];'+
-        '(node["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);'+
-        // 'way["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);'+
-        'relation["shop"="bicycle"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););'+
-        'out;>;out skel qt;';
-        $.ajax({
-          url: url,
-          dataType: 'json',
-          type: 'GET',
-          async: false,
-          crossDomain: true,
-          success: function (response) {
-            // console.log(response);
-            //here response = geojson from overpass-api
-            dataShops = response.elements;
-          }
-        })
-        return dataShops;
-      }
+    function getDataRentals() {
+      //OVERPASS_API
+      let dataRentals = {},
+          url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bicycle_rental"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);relation["amenity"="bicycle_rental"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););out;>;out skel qt;';
+      $.ajax({
+        url: url,
+        dataType: 'json',
+        type: 'GET',
+        async: false,
+        crossDomain: true,
+        success: function (response) {
+          //here response = geojson from overpass-api
+          dataRentals = response.elements;
+        }
+      })
+      return dataRentals;
+    }
 
-      function getDataRentals() {
-        //OVERPASS_API
-        let dataRentals = {},
-            url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bicycle_rental"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);relation["amenity"="bicycle_rental"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););out;>;out skel qt;';
-        $.ajax({
-          url: url,
-          dataType: 'json',
-          type: 'GET',
-          async: false,
-          crossDomain: true,
-          success: function (response) {
-            //here response = geojson from overpass-api
-            dataRentals = response.elements;
-          }
-        })
-        return dataRentals;
-      }
-
-      function getDataParking() {
-        //OVERPASS_API
-        let dataParking = {},
-            url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bicycle_parking"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);relation["amenity"="bicycle_parking"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););out;>;out skel qt;';
-        $.ajax({
-          url: url,
-          dataType: 'json',
-          type: 'GET',
-          async: false,
-          crossDomain: true,
-          success: function (response) {
-            // console.log(response);
-            //here response = geojson from overpass-api
-            dataParking = response.elements;
-          }
-        })
-        return dataParking;
-      }
+    function getDataParking() {
+      //OVERPASS_API
+      let dataParking = {},
+          url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bicycle_parking"](49.768404561217,23.908653259277,49.901047809335,24.166145324707);relation["amenity"="bicycle_parking"](49.768404561217,23.908653259277,49.901047809335,24.166145324707););out;>;out skel qt;';
+      $.ajax({
+        url: url,
+        dataType: 'json',
+        type: 'GET',
+        async: false,
+        crossDomain: true,
+        success: function (response) {
+          // console.log(response);
+          //here response = geojson from overpass-api
+          dataParking = response.elements;
+        }
+      })
+      return dataParking;
+    }
 
     const map = this.map;
-
-
-
 
     // add data-shop-bycicles markers to map
     dataShops.forEach(function(marker) {
@@ -160,7 +221,12 @@ export default {
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
-            window.alert('Shop name - '+marker.tags.name+"\n"+'Schedule- '+marker.tags.opening_hours);
+          drawGeoJSON(marker);
+    //add popup
+        var popup = new mapboxgl.Popup({closeOnClick: false})
+        .setLngLat([marker.lon, marker.lat])
+        .setHTML('<h5 class="py-3">'+marker.tags.name+'</h5>'+'<p class="m-o py-3">'+marker.tags.opening_hours+'</p>')
+        .addTo(map)
         });
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
@@ -182,7 +248,12 @@ export default {
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
-            window.alert("Name- "+marker.tags.name +"\n"+ "Network- "+marker.tags.network +"\n"+ "Capacity- "+marker.tags.capacity );
+          drawGeoJSON(marker);
+    //add popup
+        var popup = new mapboxgl.Popup({closeOnClick: false})
+        .setLngLat([marker.lon, marker.lat])
+        .setHTML('<h5 class="py-3">Rental place - '+marker.tags.name+'</h5>'+'<p>Network- '+marker.tags.network+'</p>'+'<hr>'+'<p>Capacity- '+marker.tags.capacity+'</p>')
+        .addTo(map)
         });
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
@@ -194,7 +265,7 @@ export default {
 
 
 
-    //add data-parking markers to map
+    // add data-parking markers to map
     dataParking.forEach(function(marker) {
       // console.log(marker);
     // create a DOM element for the marker
@@ -203,8 +274,14 @@ export default {
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
+          drawGeoJSON(marker);
             // console.log(marker.tags.name);
-            window.alert('Bicycle parking '+'\n'+'Capacity - '+marker.tags.capacity+'\n'+'Covered - '+marker.tags.covered);
+    //add popup
+        var popup = new mapboxgl.Popup({closeOnClick: false})
+        .setLngLat([marker.lon, marker.lat])
+        .setHTML('<h5 class="py-3">Bicycle parking</h5>'+'<p>Capacity - '+marker.tags.capacity+'</p>'+'<hr>'+'<p>Covered- '+marker.tags.covered+'</p>')
+        .addTo(map)
+            // window.alert('Bicycle parking '+'\n'+'Capacity - '+marker.tags.capacity+'\n'+'Covered - '+marker.tags.covered);
         });
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
@@ -222,7 +299,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style >
 #map{
   position:absolute;
   top:0;
@@ -244,21 +321,18 @@ export default {
   margin-bottom: 80px ;
 }
 .marker-shops{
-  width: 10px;
-  height: 10px;
-  background-color: #5BE7C4;
-  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../assets/bike.png');
 }
 .marker-rentals{
-  width: 10px;
-  height: 10px;
-  background-color: #FD7013;
-  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../assets/update.png');
 }
 .marker-parking{
-  width: 10px;
-  height: 10px;
-  background-color: #FFFFFF;
-  border-radius: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../assets/parking.png');
 }
 </style>
