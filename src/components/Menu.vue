@@ -2,9 +2,8 @@
   <div id="menu">
     <ul id="bottom-menu">
       <li class="menu-item"><a href="#" class="menu-link" @click="showMenu()"><icon class="toggle-menu-icon" name="bars"/><icon style="display:none" class="toggle-menu-icon" name="arrow-down"/></a></li>
-      <li class="menu-item"><a href="#" class="menu-link"><icon name="location-arrow"/></a></li>
+      <li class="menu-item"><a href="#" class="menu-link" @click="showNavigation()"><icon name="location-arrow"/></a></li>
       <li class="menu-item"><a href="#" class="menu-link" @click="showSearch()"><icon name="search"/></a></li>
-      <!-- <li class="menu-item" id="geocoder"></li> -->
     </ul>
       <DropdownMenu/>
   </div>
@@ -27,19 +26,17 @@ export default {
   methods:{
     showMenu: () =>{
       // need add animation rotate-icon
-
-      // $('.toggle-menu-icon').css({
-      //   'rotate':'45deg',
-      //   'transition': '0.4s'
-      // })
       $('.toggle-menu-icon').toggle('slow');
       $('#menu').hasClass('collapse-top')
     ? $('#menu').removeClass('collapse-top')
     : $('#menu').addClass('collapse-top')
       $('#dropdown-menu').toggle('slow');
     },
+    showNavigation: ()=>{
+      $('.mapboxgl-ctrl-top-left .mapboxgl-ctrl-directions').toggle("slow");
+    },
     showSearch: () =>{
-      $('.mapboxgl-ctrl-geocoder').toggle("slow");
+      $('.mapboxgl-ctrl-top-right .mapboxgl-ctrl-geocoder').toggle("slow");
     }
   }
 }

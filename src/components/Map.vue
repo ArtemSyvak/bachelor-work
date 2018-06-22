@@ -65,45 +65,42 @@ export default {
 
 
 
-function drawGeoJSON(marker) {
-  let responseGeometry;
-  $.ajax({
-    url: 'https://api.mapbox.com/directions/v5/mapbox/cycling/'+myPosition.longitude+','+myPosition.latitude+';'+marker.lon+','+marker.lat+'?overview=full&geometries=geojson&access_token=pk.eyJ1IjoiYXJ0ZW1zeXZhayIsImEiOiJjamV6dDhtejQwYXo1MzB1cGtub3Awb3htIn0.bffgjaoFCdib8m5aRj3LVA&steps=true&alternatives=false',
-    type: 'GET',
-    async:false,
-    dataType: 'json'
-  })
-  .done(function(response) {
-    responseGeometry = response.routes[0].geometry;
-  });
-
-
-            map.addLayer({
-                "id": marker.id.toString(),
-                "type": "line",
-                "source": {
-                    "type": "geojson",
-                    "data": {
-                        "type": "Feature",
-                        "properties": {},
-                        "geometry": responseGeometry
-                    }
-                },
-                "layout": {
-                    "line-join": "round",
-                    "line-cap": "round"
-                },
-                "paint": {
-                    "line-color": "#FF2E63",
-                    "line-width": 8
+      function drawGeoJSON(marker) {
+        let responseGeometry;
+        $.ajax({
+          url: 'https://api.mapbox.com/directions/v5/mapbox/cycling/'+myPosition.longitude+','+myPosition.latitude+';'+marker.lon+','+marker.lat+'?overview=full&geometries=geojson&access_token=pk.eyJ1IjoiYXJ0ZW1zeXZhayIsImEiOiJjamV6dDhtejQwYXo1MzB1cGtub3Awb3htIn0.bffgjaoFCdib8m5aRj3LVA&steps=true&alternatives=false',
+          type: 'GET',
+          async:false,
+          dataType: 'json'
+        })
+        .done(function(response) {
+          responseGeometry = response.routes[0].geometry;
+        });
+        map.addLayer({
+            "id": marker.id.toString(),
+            "type": "line",
+            "source": {
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "properties": {},
+                    "geometry": responseGeometry
                 }
-            });
+            },
+            "layout": {
+                "line-join": "round",
+                "line-cap": "round"
+            },
+            "paint": {
+                "line-color": "#FF2E63",
+                "line-width": 8
+            }
+        });
+      }
 
-}
-
-      // this.map.addControl(new MapboxDirections({
-      // accessToken: mapboxgl.accessToken
-      // }), 'top-left');
+      this.map.addControl(new MapboxDirections({
+      accessToken: mapboxgl.accessToken
+    }),  'top-left');
     // The 'building' layer in the mapbox-streets vector source contains building-height
     // data from OpenStreetMap.
       this.map.on('load', function() {
@@ -150,6 +147,7 @@ function drawGeoJSON(marker) {
 
       });
 
+
     function getDataShops() {
       //OVERPASS_API
       let dataShops = {},
@@ -165,7 +163,7 @@ function drawGeoJSON(marker) {
         async: false,
         crossDomain: true,
         success: function (response) {
-          // console.log(response);
+          console.log(response);
           //here response = geojson from overpass-api
           dataShops = response.elements;
         }
@@ -215,6 +213,7 @@ function drawGeoJSON(marker) {
     // add data-shop-bycicles markers to map
     dataShops.forEach(function(marker) {
       // console.log(marker);
+
     // create a DOM element for the marker
         let el = document.createElement('div');
         el.className = 'marker-shops';
@@ -267,22 +266,22 @@ function drawGeoJSON(marker) {
 
     // add data-parking markers to map
     dataParking.forEach(function(marker) {
-      // console.log(marker);
+
     // create a DOM element for the marker
         let el = document.createElement('div');
-        el.className = 'marker-parking';
+            el.className = 'marker-parking';
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
           drawGeoJSON(marker);
-            // console.log(marker.tags.name);
+
     //add popup
         var popup = new mapboxgl.Popup({closeOnClick: false})
         .setLngLat([marker.lon, marker.lat])
         .setHTML('<h5 class="py-3">Bicycle parking</h5>'+'<p>Capacity - '+marker.tags.capacity+'</p>'+'<hr>'+'<p>Covered- '+marker.tags.covered+'</p>')
         .addTo(map)
-            // window.alert('Bicycle parking '+'\n'+'Capacity - '+marker.tags.capacity+'\n'+'Covered - '+marker.tags.covered);
         });
+
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
     new mapboxgl.Marker(el)
@@ -306,7 +305,8 @@ function drawGeoJSON(marker) {
   bottom:0;
   width:100%;
 }
-.mapboxgl-ctrl-geocoder{
+.mapboxgl-ctrl-top-left .mapboxgl-ctrl-directions,
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl-geocoder{
   display: none;
 }
 .mapboxgl-ctrl-top-right{

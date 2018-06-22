@@ -18,14 +18,6 @@
         <input type="checkbox" id="shop" value="Shops" @click="toggleShops()">
         <label for="shop"></label>
       </li>
-      <!-- <li class="dropdown-menu-item">
-        <h6>Roads</h6>
-        <input type="checkbox" id="roads" value="Roads" v-model="checkedNames">
-        <label for="roads"></label>
-      </li> -->
-      <!-- <li class="dropdown-menu-item">
-        <p class="text-center">Go Bicycle</p>
-      </li> -->
     </ul>
   </div>
 </template>
@@ -33,11 +25,6 @@
 <script>
 export default {
   name: 'dropdown-menu',
-  // data: function () {
-  //   return {
-  //     checkedNames: ["Shops","Rental","Parking"]
-  //   }
-  // },
   methods: {
     toggleShops: () =>{
       $('.marker-shops').toggle("slow");
