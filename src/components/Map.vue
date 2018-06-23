@@ -78,8 +78,18 @@ export default {
         .done(function(response) {
           responseGeometry = response.routes[0].geometry;
         });
+
+        if (map.getLayer('go-to-marker')){
+          try {
+            map.removeLayer('go-to-marker');
+            map.removeSource('go-to-marker');
+          } catch (e) {
+            console.log(e);
+          }
+        }
+
         map.addLayer({
-            "id": marker.id.toString(),
+            "id": 'go-to-marker',
             "type": "line",
             "source": {
                 "type": "geojson",
@@ -142,11 +152,6 @@ export default {
                   'fill-extrusion-opacity': .6
               }
           }, labelLayerId);
-
-
-
-
-
       });
 
 
@@ -214,15 +219,9 @@ export default {
 
     // add data-shop-bycicles markers to map
     dataShops.forEach(function(marker) {
-      // console.log(marker);
-
     // create a DOM element for the marker
         let el = document.createElement('div');
         el.className = 'marker-shops';
-        // el.className = 'bg-shops';
-        // let marker_shops = document.createElement('div');
-        // marker_shops.className = 'marker-shops';
-        // el.appendChild(marker_shops);
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
@@ -295,7 +294,7 @@ export default {
         .addTo(map);
     });
 
-    $('.preloader-wrapper').fadeOut(10000);
+    $('.preloader-wrapper').fadeOut(6000);
     // $('body').removeClass('preloader-site');
     },
     logging: () =>{

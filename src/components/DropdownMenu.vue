@@ -25,6 +25,9 @@
 <script>
 export default {
   name: 'dropdown-menu',
+  mounted(){
+    this.toggleParking();
+  },
   methods: {
     toggleShops: () =>{
       $('.marker-shops').toggle("slow");
