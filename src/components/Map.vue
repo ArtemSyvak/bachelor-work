@@ -226,16 +226,17 @@ export default {
     //add addEventListener to markers
         el.addEventListener('click', function() {
           drawGeoJSON(marker);
-    //add popup
-        var popup = new mapboxgl.Popup({closeOnClick: false})
-        .setLngLat([marker.lon, marker.lat])
-        .setHTML('<h5 class="py-3">'+marker.tags.name+'</h5>'+'<p class="m-o py-3">'+marker.tags.opening_hours+'</p>')
-        .addTo(map)
         });
+    //add popup
+    var popup = new mapboxgl.Popup()
+    .setLngLat([marker.lon, marker.lat])
+    .setHTML('<h5 class="py-3">'+marker.tags.name+'</h5>'+'<p class="m-o py-3">'+marker.tags.opening_hours+'</p>');
+
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
     new mapboxgl.Marker(el)
         .setLngLat(coordinates)
+        .setPopup(popup)
         .addTo(map);
     });
 
@@ -253,16 +254,17 @@ export default {
     //add addEventListener to markers
         el.addEventListener('click', function() {
           drawGeoJSON(marker);
-    //add popup
-        var popup = new mapboxgl.Popup({closeOnClick: false})
-        .setLngLat([marker.lon, marker.lat])
-        .setHTML('<h5 class="py-3">Rental place - '+marker.tags.name+'</h5>'+'<p>Network- '+marker.tags.network+'</p>'+'<hr>'+'<p>Capacity- '+marker.tags.capacity+'</p>')
-        .addTo(map)
         });
+    //add popup
+    var popup = new mapboxgl.Popup()
+    .setLngLat([marker.lon, marker.lat])
+    .setHTML('<h5 class="py-3">Rental place - '+marker.tags.name+'</h5>'+'<p>Network- '+marker.tags.network+'</p>'+'<hr>'+'<p>Capacity- '+marker.tags.capacity+'</p>');
+
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
     new mapboxgl.Marker(el)
         .setLngLat(coordinates)
+        .setPopup(popup)
         .addTo(map);
     });
 
@@ -279,18 +281,18 @@ export default {
     //add addEventListener to markers
         el.addEventListener('click', function() {
           drawGeoJSON(marker);
+        });
 
     //add popup
-        var popup = new mapboxgl.Popup({closeOnClick: false})
-        .setLngLat([marker.lon, marker.lat])
-        .setHTML('<h5 class="py-3">Bicycle parking</h5>'+'<p>Capacity - '+marker.tags.capacity+'</p>'+'<hr>'+'<p>Covered- '+marker.tags.covered+'</p>')
-        .addTo(map)
-        });
+    var popup = new mapboxgl.Popup()
+    .setLngLat([marker.lon, marker.lat])
+    .setHTML('<h5 class="py-3">Bicycle parking</h5>'+'<p>Capacity - '+marker.tags.capacity+'</p>'+'<hr>'+'<p>Covered- '+marker.tags.covered+'</p>');
 
     // add marker to map
     let coordinates = [marker.lon, marker.lat];
     new mapboxgl.Marker(el)
         .setLngLat(coordinates)
+        .setPopup(popup)
         .addTo(map);
     });
 
