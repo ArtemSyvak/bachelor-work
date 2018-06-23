@@ -12,6 +12,7 @@ export default {
   },
   methods:{
     createMap: () =>{
+      // $('.preloader-wrapper').fadeIn();
       let dataShops = getDataShops(),
           dataRentals = getDataRentals(),
           dataParking = getDataParking();
@@ -45,8 +46,9 @@ export default {
       bearing: -60,
       zoom: 14,
       hash: true,
-      style: 'mapbox://styles/artemsyvak/cjf1load5091o2tk8cy4cje4i'
-      // style: 'mapbox://styles/artemsyvak/cjifdt5gt0e1m2rmomxedso69'
+      // style: 'mapbox://styles/artemsyvak/cjf1load5091o2tk8cy4cje4i'
+      // style: 'mapbox://styles/artemsyvak/cjir8rd634pvf2sq8o3zw337f'
+      style: 'mapbox://styles/artemsyvak/cjir8rd634pvf2sq8o3zw337f'
       });
 
     // Add zoom and rotation controls
@@ -92,15 +94,15 @@ export default {
                 "line-cap": "round"
             },
             "paint": {
-                "line-color": "#FF2E63",
+                "line-color": "#FFD800",
                 "line-width": 8
             }
         });
       }
 
-      this.map.addControl(new MapboxDirections({
-      accessToken: mapboxgl.accessToken
-    }),  'top-left');
+    //   this.map.addControl(new MapboxDirections({
+    //   accessToken: mapboxgl.accessToken
+    // }),  'top-left');
     // The 'building' layer in the mapbox-streets vector source contains building-height
     // data from OpenStreetMap.
       this.map.on('load', function() {
@@ -217,6 +219,10 @@ export default {
     // create a DOM element for the marker
         let el = document.createElement('div');
         el.className = 'marker-shops';
+        // el.className = 'bg-shops';
+        // let marker_shops = document.createElement('div');
+        // marker_shops.className = 'marker-shops';
+        // el.appendChild(marker_shops);
 
     //add addEventListener to markers
         el.addEventListener('click', function() {
@@ -289,6 +295,8 @@ export default {
         .addTo(map);
     });
 
+    $('.preloader-wrapper').fadeOut(10000);
+    // $('body').removeClass('preloader-site');
     },
     logging: () =>{
       console.log('success init');
@@ -320,19 +328,31 @@ export default {
 .mapboxgl-ctrl-top-right .mapboxgl-ctrl{
   margin-bottom: 80px ;
 }
+.bg-shops{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
 .marker-shops{
-  width: 25px;
-  height: 25px;
-  background-image: url('../assets/bike.png');
+  width: 40px;
+  height: 40px;
+  background-image: url('../assets/if_Shop.png');
+  background-size: cover;
+  cursor: pointer;
 }
 .marker-rentals{
-  width: 25px;
-  height: 25px;
-  background-image: url('../assets/update.png');
+  width: 40px;
+  height: 40px;
+  background-image: url('../assets/if_Bike.png');
+  background-size: cover;
+  cursor: pointer;
 }
 .marker-parking{
   width: 25px;
   height: 25px;
-  background-image: url('../assets/parking.png');
+  background-image: url('../assets/if_parking_2.png');
+  background-size: cover;
+  cursor: pointer;
 }
 </style>

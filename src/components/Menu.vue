@@ -50,7 +50,7 @@ export default {
     width: 100%;
     height: 40px;
     transition: 0.4s;
-    background-color: #7A57D1;
+    background: linear-gradient(89.44307193183613deg, rgba(138, 42, 176,1) -2.6077507320644173%,rgba(223, 75, 103,1) 95.29671486090776%,rgba(224, 76, 103,1) 95.29671486090776%)
   }
   .collapse-top{
     transition: 0.4s;
@@ -75,7 +75,8 @@ export default {
     width: 100%;
     text-align: center;
     text-decoration: none;
-    color: #FCE38A;
+    color: #FDFFFC;
+    /* color: #f4f5f9; */
     font-weight: 600;
   }
 </style>

@@ -44,7 +44,7 @@ export default {
     display: none;
     background-color: #FCFCFC;
     padding: 1.5rem 2rem;
-    color: #7A57D1;
+    color: #A94CAF;
   }
   ul{
     padding: 0;
@@ -71,7 +71,7 @@ export default {
   	cursor: pointer;
   	width: 40px;
   	height: 15px;
-  	background: #7A57D1;
+  	background: #6abe83;
   	display: block;
   	border-radius: 30px;
   	position: relative;
@@ -85,7 +85,8 @@ export default {
   	right: 2px;
   	width: 20px;
   	height: 20px;
-  	background: #5BE7C4;
+  	/* background: #5BE7C4; */
+  	background: #f06966;
   	border-radius: 20px;
   	transition: 0.3s;
   }

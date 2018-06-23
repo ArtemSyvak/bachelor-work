@@ -16,6 +16,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
 })
 $('.marker-shops').removeClass('mapboxgl-marker-anchor-center');
