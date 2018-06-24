@@ -12,7 +12,6 @@ export default {
   },
   methods:{
     createMap: () =>{
-      // $('.preloader-wrapper').fadeIn();
       let dataShops = getDataShops(),
           dataRentals = getDataRentals(),
           dataParking = getDataParking();
@@ -156,6 +155,7 @@ export default {
 
 
     function getDataShops() {
+
       //OVERPASS_API
       let dataShops = {},
           url = 'https://overpass-api.de/api/interpreter?data=[out:json][timeout:25];'+
@@ -211,11 +211,13 @@ export default {
           //here response = geojson from overpass-api
           dataParking = response.elements;
         }
-      })
+      });
       return dataParking;
     }
 
+
     const map = this.map;
+
 
     // add data-shop-bycicles markers to map
     dataShops.forEach(function(marker) {
@@ -228,7 +230,7 @@ export default {
           drawGeoJSON(marker);
         });
     //add popup
-    var popup = new mapboxgl.Popup()
+    let popup = new mapboxgl.Popup()
     .setLngLat([marker.lon, marker.lat])
     .setHTML('<h5 class="py-3">'+marker.tags.name+'</h5>'+'<p class="m-o py-3">'+marker.tags.opening_hours+'</p>');
 
@@ -239,9 +241,6 @@ export default {
         .setPopup(popup)
         .addTo(map);
     });
-
-
-
 
 
     //add data-shop-rentals markers to map
