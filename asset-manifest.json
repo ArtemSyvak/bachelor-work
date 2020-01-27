@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/node-react-blog/static/css/main.d1b05096.chunk.css",
+    "main.js": "/node-react-blog/static/js/main.69da16fd.chunk.js",
+    "main.js.map": "/node-react-blog/static/js/main.69da16fd.chunk.js.map",
+    "runtime-main.js": "/node-react-blog/static/js/runtime-main.95880d9c.js",
+    "runtime-main.js.map": "/node-react-blog/static/js/runtime-main.95880d9c.js.map",
+    "static/js/2.fae81f22.chunk.js": "/node-react-blog/static/js/2.fae81f22.chunk.js",
+    "static/js/2.fae81f22.chunk.js.map": "/node-react-blog/static/js/2.fae81f22.chunk.js.map",
+    "index.html": "/node-react-blog/index.html",
+    "precache-manifest.26cccd2e921dba998643764ee694f47c.js": "/node-react-blog/precache-manifest.26cccd2e921dba998643764ee694f47c.js",
+    "service-worker.js": "/node-react-blog/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/node-react-blog/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.fae81f22.chunk.js.LICENSE": "/node-react-blog/static/js/2.fae81f22.chunk.js.LICENSE",
+    "static/media/logo.svg": "/node-react-blog/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.95880d9c.js",
+    "static/js/2.fae81f22.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.69da16fd.chunk.js"
+  ]
+}
